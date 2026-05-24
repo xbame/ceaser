@@ -1,19 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Движок шифра Цезаря — чистая логика без UI.
-
-Модули:
-    alphabet  — алфавиты, эталонные частоты, индексы букв
-    text      — подготовка и форматирование текста, нормализация ключа
-    cipher    — шифрование и расшифровка (caesar_encrypt / caesar_decrypt)
-    cracker   — взлом методом частотного анализа (crack_caesar)
-
-Зависимости (стрелка = "импортирует"):
-    text     → alphabet
-    cipher   → alphabet, text
-    cracker  → alphabet, text, cipher
-"""
-
 from .alphabet import (
     RUSSIAN_ALPHABET, RUSSIAN_ALPHABET_SIZE,
     LATIN_ALPHABET, LATIN_ALPHABET_SIZE,
